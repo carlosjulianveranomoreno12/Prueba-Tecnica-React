@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .3) 100%), url(./assets/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.App {
+  padding-top: 36px;
+  text-align: center;
+}
+
+.button-goBack {
+  position: absolute;
+  top: 20px;
+  margin-right: 10px;
+  right: 20px;
+}
+
+.SearchForm-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.details-page {
+  padding: 40px;
+}
+
+.movie-details,
+.moviesList-item {
+  box-shadow: 3px 7px 16px -2px rgba(0,0,0,0.6);
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.homePage {
+  padding: 200px 0;
+}
+
+@media (min-width: 900px) {
+  .moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .movie-details,
+  .moviesList-item {
+    width: 40%;
+  }
+
+  .moviesList-item {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-details,
+  .moviesList-item {
+    width: 30%;
+  }
+}
+
+.copy {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  margin-right: 10px;
+  right: 0;
+}
